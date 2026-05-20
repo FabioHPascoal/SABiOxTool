@@ -47,10 +47,9 @@
                   :key="key"
                 >
                   <td>{{ formatActivityLabel(activity.key) }}</td>
-                  <td>
+                  <td class="status-cell">
                     <q-badge
                       :color="stageColor(activity.stage)"
-                      align="top"
                       class="q-pa-sm text-white"
                     >
                       {{ formatStage(activity.stage) }}
@@ -156,5 +155,10 @@ const createLifeCycle = async (phaseId) => {
 <style scoped>
 .bg-surface {
   background-color: var(--q-surface);
+}
+
+.status-cell {
+  text-align: center;
+  vertical-align: middle;
 }
 </style>

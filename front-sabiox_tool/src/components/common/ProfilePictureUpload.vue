@@ -106,7 +106,7 @@ export default defineComponent({
   content: 'Alterar Imagem';
 }
 
-.profile-picture-field:deep .q-field__messages > div {
+.profile-picture-field :deep(.q-field__messages > div) {
   text-align: center;
 }
 

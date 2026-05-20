@@ -32,18 +32,18 @@ import projectCardSmall from 'src/components/projects/ProjectCardSmall.vue'
 </script>
 
 <style scoped>
-  .fade-move-enter-active,
-  .fade-move-leave-active {
-    transition: all 0.4s ease;
-  }
+.fade-move-enter-active,
+.fade-move-leave-active {
+  transition: all 0.4s ease;
+}
 
-  .fade-move-enter-from,
-  .fade-move-leave-to {
-    opacity: 0;
-    transform: translateY(20px);
-  }
+.fade-move-enter-from,
+.fade-move-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
 
-  .fade-move-move {
-    transition: transform 0.4s ease;
-  }
+.fade-move-move {
+  transition: transform 0.4s ease;
+}
 </style>

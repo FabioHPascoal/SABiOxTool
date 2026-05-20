@@ -16,13 +16,13 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DefinePurpose extends Activity {
-    @Column(name = "what_question")
+    @Column(name = "what_question", columnDefinition = "TEXT")
     private String whatQuestion;
 
-    @Column(name = "for_what_question")
+    @Column(name = "for_what_question", columnDefinition = "TEXT")
     private String forWhatQuestion;
 
-    @Column(name = "why_question")
+    @Column(name = "why_question", columnDefinition = "TEXT")
     private String whyQuestion;
 
     public DefinePurpose(ActivityType activityType, LifeCycle lifeCycle) {

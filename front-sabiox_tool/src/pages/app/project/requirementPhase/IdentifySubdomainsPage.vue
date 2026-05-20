@@ -110,7 +110,6 @@ const form = ref({ title: '', description: '' })
 
 const lifeCycle = computed(() => projectStore.getSelectedLifeCycle)
 
-// Busca os subdomínios existentes
 const fetchSubdomains = async () => {
   if (!lifeCycle.value?.id) return
   loading.value = true
@@ -131,7 +130,6 @@ watch(() => lifeCycle.value?.id, (id) => {
 
 onMounted(() => fetchSubdomains())
 
-// Adiciona novo subdomínio
 const addSubdomain = async () => {
   if (!form.value.title?.trim()) {
     $q.notify({ type: 'warning', message: 'Title is required' })

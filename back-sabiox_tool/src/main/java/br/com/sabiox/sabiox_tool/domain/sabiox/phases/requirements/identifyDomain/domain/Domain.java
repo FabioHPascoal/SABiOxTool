@@ -22,8 +22,13 @@ public class Domain {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(columnDefinition = "TEXT")
     private String description;
+
+    @Column(name = "horizontal_dimension", columnDefinition = "TEXT")
     private String horizontalDimension;
+
+    @Column(name = "vertical_dimension", columnDefinition = "TEXT")
     private String verticalDimension;
 
     @OneToOne

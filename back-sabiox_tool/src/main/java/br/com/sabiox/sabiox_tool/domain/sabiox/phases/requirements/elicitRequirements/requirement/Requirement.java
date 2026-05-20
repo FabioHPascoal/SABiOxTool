@@ -25,6 +25,7 @@ public class Requirement {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(columnDefinition = "TEXT")
     String description;
 
     @CreationTimestamp
